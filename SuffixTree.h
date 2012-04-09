@@ -8,6 +8,7 @@ class SuffixTree {
 private:
 	std::string content;
 	Node* root;
+	std::vector<Node*> head;
 
 public:
 	Node* getRoot();
@@ -18,6 +19,10 @@ public:
 	std::string search(std::string searchString);
 
 	Node* createFirstChild(std::string content, Node* root);
+
+	Node* fastScan(Node* suffixLink, Node* label);
+	Node* slowScan(Node* w, std::string tail);
+
 };
 
 #endif /* SUFFIXTREE_H_ */

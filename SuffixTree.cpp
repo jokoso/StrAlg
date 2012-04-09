@@ -32,15 +32,25 @@ int SuffixTree::buildTree(string content, string sentinel) {
 	root = new Node();
 	Node* child = SuffixTree::createFirstChild(content, root);
 	root->addChild(child);
+	root->setSuffixLink(root);
 
 	Node* u;
 	Node* v;
 	for (int i = 0; i < (int) content.length(); i++) {
-	  
-	}
+	  Node* tmpHead = head[i];
+	}  
 	return 0;
 }
 
 string SuffixTree::search(string searchString) {
 	return "";
+}
+
+
+Node* SuffixTree::fastScan(Node* suffixLink, Node* label) {
+  return 0;
+}
+	
+Node* SuffixTree::slowScan(Node* w, std::string tail) {
+  return 0;
 }

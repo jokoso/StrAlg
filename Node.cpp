@@ -14,6 +14,10 @@ Node* Node::getSuffixLink() {
 	return suffixLink;
 }
 
+void Node::setSuffixLink(Node* link) {
+  suffixLink = link;
+}
+
 Node* Node::getParent() {
 	return parent;
 }

@@ -13,6 +13,7 @@ private:
 
 public:
 	Node* getSuffixLink();
+	void setSuffixLink(Node* link);
 	Node* getParent();
 	void setParent(Node* parent);
 
