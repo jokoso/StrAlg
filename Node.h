@@ -12,6 +12,7 @@ private:
 	int idxEnd;
 
 public:
+	Node();
 	Node* getSuffixLink();
 	void setSuffixLink(Node* link);
 	Node* getParent();

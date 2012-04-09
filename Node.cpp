@@ -2,10 +2,11 @@
 
 using namespace std;
 
-/*Node::Node() {
-	// TODO Auto-generated constructor stub
+Node::Node() {
+  suffixLink = 0;
+  parent = 0;
 }
-
+/*
 Node::~Node() {
 	// TODO Auto-generated destructor stub
 }*/

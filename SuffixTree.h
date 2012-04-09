@@ -20,7 +20,7 @@ public:
 
 	Node* createFirstChild(std::string content, Node* root);
 
-	Node* fastScan(Node* suffixLink, Node* label);
+	Node* fastScan(Node* suffixLink, int startIdx, int endIdx);
 	Node* slowScan(Node* w, std::string tail);
 
 };
